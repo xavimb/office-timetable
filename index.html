@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+    	<title>Departure timetable</title>
+    	<style type="text/css">
+    		<%= styles %>
+    	</style>
+    	
+    </head>
+  	<body>
+  		<div class="times">
+    	<% _.each(departureTimes, function(departure) { %>
+    		<div class="row">
+	    	 	<h3 class="board"><%= departure.line %></h3>
+	    	 	<h3 class="board"><%= departure.time %></h3> 
+	    	 	<h3 class="board"><%= departure.destination %></h3>
+    	 	</div>
+	 	<% }); %>
+    	</div>
+    </body>
+</html>

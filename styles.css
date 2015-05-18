@@ -1,0 +1,67 @@
+.board {
+    padding:  5px 10px;
+    margin: 15px;
+    display: inline-block;
+    font-size: 2rem;
+    background: rgb(30, 30, 30);
+    font-family: "Enhanced Dot Digital-7"
+    background: -webkit-gradient(linear, center top, center bottom, 
+      color-stop(0.0, rgba(0,0,0, 1)), 
+      color-stop(0.05, rgba(30,30,30, 1)),  
+      color-stop(1.0, rgba(50, 50, 60, 1)));
+    background: -moz-linear-gradient(270deg, 
+      rgba(0,0,0,1) 0%, 
+      rgba(30, 30, 30, 1) 5%, 
+      rgba(50, 50, 60, 1) 100%);
+    /* border radius */
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+ 
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+    /* box shadow */
+    -webkit-box-shadow: 
+      inset 0 -2px 0 rgba(50,50,50,0.7), 
+      inset 0 -4px 0 rgba(0,0,0,0.7), 
+      inset 4px 0px 8px rgba(0,0,0,0.9), 
+      inset -4px 0px 8px rgba(0,0,0,0.9), 
+      0 2px 0px rgba(255,255,255,0.2);
+    -moz-box-shadow: 
+      inset 0 -2px 0 rgba(50,50,50,0.7), 
+      inset 0 -4px 0 rgba(0,0,0,0.7), 
+      inset 4px 0px 8px rgba(0,0,0,0.9), 
+      inset -4px 0px 8px rgba(0,0,0,0.9), 
+      0 2px 0px rgba(255,255,255,0.2);
+    box-shadow:
+      inset 0 -2px 0 rgba(50,50,50,0.7), 
+      inset 0 -4px 0 rgba(0,0,0,0.7), 
+      inset 4px 0px 8px rgba(0,0,0,0.9), 
+      inset -4px 0px 8px rgba(0,0,0,0.9), 
+      0 2px 0px rgba(255,255,255,0.2);
+}
+
+.board:before {
+    /* approximation for old browsers */
+    border-top: 1px solid rgb(30, 30, 30);
+    border-top: 1px solid rgba(0,0,0,0.4);
+    border-bottom: 2px solid rgba(255,255,255,0.08);
+    height: 0px;
+    width: calc(100% + 18px);
+    position: relative;
+    left: -9px;
+    top: 22px;
+    content: " ";
+    display: block;
+}
+
+body {
+	background-color: #222;
+	color: white;
+}
+
+.times {
+	width: 500px;
+}
